@@ -110,6 +110,6 @@ dependencies {
     // Jsoup
     implementation 'org.jsoup:jsoup:1.13.1'
 
-    kapt("groupId:artifactId:1.4.21")
+    kapt("groupId:artifactId:1.5.0")
 
 }
