@@ -53,7 +53,7 @@
         android:id="@+id/view5"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="12dp"
         android:background="@color/gray"
         app:layout_constraintStart_toEndOf="@+id/view4"
         app:layout_constraintTop_toTopOf="@+id/view4" />
@@ -62,7 +62,7 @@
         android:id="@+id/view6"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="12dp"
         android:background="@color/gray"
         app:layout_constraintStart_toEndOf="@+id/view5"
         app:layout_constraintTop_toTopOf="@+id/view5" />
