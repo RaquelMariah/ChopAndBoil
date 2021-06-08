@@ -1,4 +1,4 @@
-package com.ramaria.chopnboil
+package com.ramaria.chopnboil.util
 
 class Constants {
     companion object {
