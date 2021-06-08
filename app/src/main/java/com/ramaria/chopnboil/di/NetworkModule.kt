@@ -1,11 +1,10 @@
 package com.ramaria.chopnboil.di
 
-import com.ramaria.chopnboil.Constants.Companion.BASE_URL
+import com.ramaria.chopnboil.util.Constants.Companion.BASE_URL
 import com.ramaria.chopnboil.FoodRecipesApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.*
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
