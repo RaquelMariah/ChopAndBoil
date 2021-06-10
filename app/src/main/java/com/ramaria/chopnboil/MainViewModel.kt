@@ -14,17 +14,18 @@ class MainViewModel @Inject constructor(
     application: Application
 ) : AndroidViewModel(application) {
 
-    private fun hasInternetConnection(): Boolean{
-        val connectivityManager: getApplication<Application>().getSystemService(
+    private fun hasInternetConnection(): Boolean {
+        val connectivityManager: Application<Application>().getSystemService(
         Context.CONNECTIVITY_SERVICE
-        )as ConnectivityManager
-
+        ) as ConnectivityManager
         val activityNetwork = connectivityManager.activeNetwork ?: return false
-        val capabilities = connectivityManager.getNetworkCapabilities(activityNetwork) ?: return false
-        return when{
+        val capabilities =
+            connectivityManager.getNetworkCapabilities(activityNetwork) ?: return false
+        return when {
             capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
             capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
             capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) -> true
+            else -> false
 
         }
     }
